@@ -5,15 +5,16 @@ import { Section } from './Section/Section';
 import { Notification } from './Nitification/Notification';
 
 export const App = () => {
-  let [good, setGood] = useState(0);
-  let [neutral, setNeutral] = useState(0);
-  let [bad, setBad] = useState(0);
-  let [total, setTotal] = useState(0);
-  let [positive, setPositive] = useState(0);
+  const [good, setGood] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bad, setBad] = useState(0);
+  const [total, setTotal] = useState(0);
+  const [positive, setPositive] = useState(0);
 
   const arrBtn = ['good', 'neutral', 'bad'];
 
   function addAllFeedback(event) {
+    console.log(useState);
   
     switch (event.currentTarget.textContent) {
       case 'good':
